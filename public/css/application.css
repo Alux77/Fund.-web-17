@@ -1,0 +1,108 @@
+.container {
+  margin: 80px auto;
+  text-align: center;
+}
+
+body
+{
+  background-size: cover;
+  background: -webkit-radial-gradient(#2CF1E5, #037A73);
+}
+
+h1 {
+  font-family: 'Dhurjati', sans-serif;
+  color: black;
+  opacity: 1;
+}
+
+li, h2 {
+  color: red;
+}
+
+#legal_alux
+{
+  font-family: 'Dhurjati', sans-serif;
+  color: black;
+  opacity: .5;
+  font-size: 15px;
+  top: -40px;
+}
+
+h3 {
+  font-family: 'Dhurjati', sans-serif;
+  color: black;
+  opacity: .5;
+}
+
+form, p {
+  font-family: 'Dhurjati', sans-serif;
+  color: black;
+}
+
+span {
+  display: none;
+}
+
+input {
+  border-spacing: 90px;
+}
+
+::-webkit-input-placeholder {
+   color: black;
+   opacity: .2;
+   text-align: center;
+}
+
+#flame2
+{
+  position: absolute;
+  top:      325px;
+  left:     753px;
+}
+#flame1
+{
+  position: absolute;
+  top:      325px;
+  left:     657px;
+}
+
+#tittle
+{
+  font-size: 25px;
+}
+
+th
+{
+  padding-left: 10px;
+}
+
+----------------------------------
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}

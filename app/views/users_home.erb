@@ -1,0 +1,71 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+</head>
+
+<script>
+  $(document).ready(function(){
+    $("#bks").click(function(){
+    $("#deck1").slideToggle(1500);
+    });
+  });
+
+  $(document).ready(function(){
+    $("#mvs").click(function(){
+    $("#deck2").slideToggle(1500);
+    });
+  });
+
+    $(document).ready(function(){
+    $("#chrs").click(function(){
+    $("#deck3").slideToggle(1500);
+    });
+  });
+</script>
+
+  <p id='slogan'><h1>&#8867; ALUX´S EVIL JOY APP &#8866;</h1></p>
+    <sup id='legal_alux'>marathon game exercise : by alux : 2017</sup>
+    <p>
+  <img id='logo' src="https://d30y9cdsu7xlg0.cloudfront.net/png/267100-200.png" alt="logo" style="width:260px; height:260px;">
+  <img id='flame1' src="https://d30y9cdsu7xlg0.cloudfront.net/png/129550-200.png" style="width:35px; height:35px;">
+  <img id='flame2' src="https://d30y9cdsu7xlg0.cloudfront.net/png/129550-200.png" style="width:35px; height:35px;">
+
+    <br>
+    <br>
+
+  <h1>&#215; Welcome &lsaquo;<%= @user.name.upcase %>&rsaquo; to evil marathon &#215;</h1>
+  <p id='tittle'><sup>CHOOSE YOUR DECK</sup></p>
+ 
+    <table id='deks_tb' align="center">
+  <!-- <form id='form_users' action="/deck/<%=@user.id%>" method="post"> -->
+  <tr>
+    <th><input action="/deck" method="post" id='bks' type="image" src="http://downloadicons.net/sites/default/files/book-icon-91379.png" alt="logo" style="width:60px; height:60px;" value='1'>
+      <span class='tooltiptext'>books</span> </th>
+ 
+  <!-- <form id='form_users' action="/logout" method="post"> -->
+    <th><input id='mvs' type="image" src="https://cdn2.iconfinder.com/data/icons/gears-wheels-blades/512/reel-512.png" alt="logo" style="width:50px; height:50px;" value='2'></th>
+
+ <!--  <form id='form_users' action="/logout" method="post"> -->
+    <th><input id='chrs' type="image" src="http://www.freeiconspng.com/uploads/black-hacker-icon-0.png" alt="logo" style="width:60px; height:60px;" value='3'></th>
+    </tr>
+    </table>
+
+<center><table cellpadding="20">
+  <tr>
+
+    <br>
+    <br>
+    <span id='deck1'><%= erb :deck_1_books %></span>
+    <span id='deck2'><%= erb :deck_2_movies %></span>
+    <span id='deck3'><%= erb :deck_3_creatures %></span>
+    <br>
+    <br>
+
+    <td>
+    <form id='form_users' action="/logout" method="post">
+      <input type="image" src="https://cdn4.iconfinder.com/data/icons/materia-medicine/24/028_059_poison_drug_medicine_pharmacy-128.png" alt="logo" style="width:60px; height:60px;">
+      <h5><sup><center>&#8867; LOG OUT &#8866;</center></sup></h5>
+    </td>
+  </tr>
+</table></center>
+
+</body>

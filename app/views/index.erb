@@ -1,0 +1,55 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Dhurjati" rel="stylesheet">
+</head>
+
+<script>
+  $(document).ready(function(){
+    $("#f1").click(function(){
+    $("#form1").slideToggle(1500);
+    });
+  });
+
+  $(document).ready(function(){
+    $("#f2").click(function(){
+    $("#form2").slideToggle(1500);
+    });
+  });
+</script>
+
+  <p id='slogan'><h1>&#8867; ALUX´S EVIL JOY APP &#8866;</h1></p>
+    <sup id='legal_alux'>marathon game exercise : by alux : 2017</sup>
+    <p>
+  <img id='logo' src="https://d30y9cdsu7xlg0.cloudfront.net/png/267100-200.png" alt="logo" style="width:260px; height:260px;">
+  <img id='flame1' src="https://d30y9cdsu7xlg0.cloudfront.net/png/129550-200.png" style=":width35px; height:35px;">
+  <img id='flame2' src="https://d30y9cdsu7xlg0.cloudfront.net/png/129550-200.png" style="width:35px; height:35px;">
+
+<center><table cellpadding="20">
+  <br>
+  <tr>
+<!-- imagen de sign up -->
+    <td><input id='f1' type="image" src="http://www.psuca.edu/wp-content/uploads/2016/06/1465364850_32.ID-Vertical.png" alt="logo" style="width:65px; height:65px;">
+    <br>
+    <h3><sup><center>&#8867; SIGN UP &#8866;</center></sup></h3>
+    </td>
+
+  <!-- imagen de log in -->
+    <td><input id='f2' type="image" src="https://d30y9cdsu7xlg0.cloudfront.net/png/24733-200.png" alt="logo" style="width:55px; height:55px;">
+    <br>
+    <h3><sup><center>&#8867; LOG IN &#8866;</center></sup></h3>
+    </td>
+
+  </tr>
+</table></center>
+
+<% if @user %>
+  <% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |msg| %>
+  <li>
+    <h2><%= msg %></h2>
+  </li>
+    <% end %>
+  <% end %>
+<% end %>
+
+<span id='form1'><%= erb :sign_up %></span>
+<span id='form2'><%= erb :log_in %></span>
